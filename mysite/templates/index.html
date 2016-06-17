@@ -1,0 +1,23 @@
+<html>
+<meta content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style> 
+h3{margin:0;} 
+
+#container {
+    display: flex;
+	display: -webkit-flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    height: 80%; 
+}
+</style> 
+<body>
+<div id="container">
+	{% load staticfiles %}
+	<image src="{% static 'identity.png' %}" ></image>
+	<h3>RaspberryPi Identity</h3>
+</div>
+</body>
+</html>

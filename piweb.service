@@ -1,0 +1,10 @@
+[Unit]
+Description=Pi Web Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pi/piwatcher/mysite/manage.py runserver 0:8080
+
+[Install]
+WantedBy=multi-user.target

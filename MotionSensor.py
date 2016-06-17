@@ -31,7 +31,7 @@ def report_to_server(motion_time):
     result = webhelper.report_motion(motion_time)    # 访问的网络链接，耗时任务
     print("%f report status: %s" % (motion_time, result))
     # 1号灯灭
-    relay.switch(0, 1)
+    relay.switch(0, 0)
 
 
 def main():
